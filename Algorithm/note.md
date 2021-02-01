@@ -8,3 +8,7 @@
   4. Built-in - 내장 
 - https://open.oregonstate.education/computationalbiology/chapter/variables-and-scope/
 - 파이썬에서 if, for, while 안에 선언된 변수들은 지역 변수가 아니라 블록 바깥의 스코프에서도 유지된다. 파이썬은 오직 함수 레벨의 스코핑을 사용한다.
+- list comprehension에 대해 https://minjoos.tistory.com/3
+  1. 수학 시간에 배운 {w | w ⊂ V & P(w)} 이런 것. 집합 V에 속하는 원소 w중에, 성질 P를 만족하는 모든 w들의 집합
+  2. [w for w in V if P(w)]가 된다.
+- 2차원 리스트 생성 및 입력 받기 https://minjoos.tistory.com/2
