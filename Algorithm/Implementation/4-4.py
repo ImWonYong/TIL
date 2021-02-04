@@ -31,3 +31,52 @@ visited_stop[a][b] = 1
 # 북, 동, 남, 서
 dx = [-1, 0, 1, 0]
 dy = [0, -1, 0, 1]
+
+# 왼쪽 방향 보기
+def turn_left():
+  global d
+  if d == 0:
+    d = 3
+  else:
+    d -= 1
+
+# 시뮬레이션 시작
+
+# 현재 방문한 곳
+count = 1
+# 회전 수
+turn_count = 0
+
+while True:
+  # 왼쪽 보기
+  turn_left()
+  na = a + dx[d]
+  nb = b + dy[d]
+
+  # 육지이고 간적 없는 땅이면 전진
+  if game_map[na][nb] == 0 and visited_spot[na][nb] == 0:
+    count += 1
+    turn_count = 0
+    a = na
+    b = nb
+    visited_spot[a][b] = 1
+    continue
+  # 가 본적이 없거나 바다인 경우
+  else:
+    turn_count += 1
+
+  # 네 방향 모두 갈 수 없으면
+  if turn_count == 4:
+    na = a - dx[d]
+    nb = b - dx[d]
+    # 뒤로 갈 수 있다면
+    if game_map[na][nb] == 0:
+      a = na
+      b = nb
+    # 이 때 뒤가 바다라면
+    else:
+      break
+    # 뒤로 이동 되었으니 다시 회전수 0  
+    turn_count = 0
+
+print(count)
