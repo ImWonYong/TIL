@@ -53,3 +53,30 @@ print(queue) # 나중에 들어온 원소부터 출력
 ```
 파이썬으로 큐를 구현할 때는 collections 모듈에서 제공하는 deque 자료구조 활용.
 deque는 스택과 큐의 장점을 모두 채택한 것인데 데이터 넣고 빼는 속도가 리스트 자료형에 비해 효율적이고 queue 라이브러리를 이용하는 것보다 더 간단.
+
+### 재귀 함수
+- 자기 자신을 다시 호출하는 함수
+
+```python
+def recursive_function():
+	print(‘재귀 함수를 호출합니다.’)
+	recursive_function()
+
+recursive_function()
+```
+이 코드는 무한히 호출됨.
+
+- 재귀 함수는 종료 조건이 필요함
+- 언제 끝날지, 종료 조건을 꼭 명시해야 함.
+```python
+def recursive_function(i):
+	# 100번째 출력했을 때 종료되도록 종료 조건 명시
+	if i == 100:
+		return
+	print(I, ‘번째 재귀 함수에서’, i + 1, ‘번째 재귀 함수를 호출합니다.’)
+	recursive_function(i + 1)
+	print(i, ‘번째 재귀 함수를 종료합니다.’)
+
+recursive_function(1)
+```
+
