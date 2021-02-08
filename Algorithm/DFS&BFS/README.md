@@ -119,7 +119,7 @@ print(gcd(192, 162))
 ```
 ## 탐색 알고리즘 DFS/BFS
 
-###DFS(Depth-FIrst Search)
+### DFS(Depth-FIrst Search)
 - 깊이 우선 탐색
 - 그래프의 깊은 부분을 우선으로 탐색하는 알고리즘
 
@@ -206,7 +206,7 @@ visited = [False] * 9
 dfs(graph, 1, visited)
 ```
 
-###BFS(Breadth-First Search)
+### BFS(Breadth-First Search)
 - 너비 우선 탐색
 - 가까운 노드부터 우선적으로 탐색하는 알고리즘
 1, 탐색 시작 노드를 큐에 삽입하고 방문 처리.
