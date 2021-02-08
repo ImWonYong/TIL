@@ -180,7 +180,7 @@ DFS 알고리즘의 구체적인 동작
 def dfs(graph, v, visited):
 	# 현재 노드를 방문 처리
 	visited[v] = True
-	print(v, end=‘ ‘(
+	print(v, end=‘ ‘)
 	# 현재 노드와 연결된 다른 노드를 재귀적으로 방문
 	for I in graph[v]:
 		if not visited[I]:
@@ -209,6 +209,7 @@ dfs(graph, 1, visited)
 ### BFS(Breadth-First Search)
 - 너비 우선 탐색
 - 가까운 노드부터 우선적으로 탐색하는 알고리즘
-1, 탐색 시작 노드를 큐에 삽입하고 방문 처리.
+
+1. 탐색 시작 노드를 큐에 삽입하고 방문 처리.
 2. 큐에서 노드를 꺼내 해당 노드의 인접 노드 중에서 방문하지 않은 노드를 모두 큐에 삽입
 3. 2번 과정을 더 이상 수행 할 수 없을 때까지 반복
