@@ -1,4 +1,5 @@
 # 백준 18352
+# 단방햐 큐는 어떻게 될까?
 from collections import deque
 
 
