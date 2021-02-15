@@ -12,3 +12,4 @@
   1. 수학 시간에 배운 {w | w ⊂ V & P(w)} 이런 것. 집합 V에 속하는 원소 w중에, 성질 P를 만족하는 모든 w들의 집합
   2. [w for w in V if P(w)]가 된다.
 - 2차원 리스트 생성 및 입력 받기 https://minjoos.tistory.com/2
+- 입출력 시간초과에 대하여(https://codecollector.tistory.com/760)
